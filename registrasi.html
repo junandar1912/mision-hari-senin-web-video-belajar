@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrasi</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <img src="Type=Type5.png" alt="nav-bar">
+    </div>
+    <main class="main-content">
+        <div class="title">
+            <h1>Pendaftaran akun</h1>
+            <p>Yuk, daftarkan akun kamu sekarang juga</p>
+        </div>
+        <form action="main-form">
+            <div class="form-nama">
+                <label for="nama">Nama Lengkap <sapan>*</sapan>
+                    <input type="text" id="nama" required>
+                </label>
+            </div>
+            <div class="form-email">
+                <label for="email">E-mail <span>*</span></label>
+                <input type="email" id="email" required> 
+            </div>
+            <div class="form number">
+                <label for="no-hp">NO. HP <span>*</span></label>
+                <select name="phone-number" id="no-hp">
+                    <option value="+62">+62</option>
+                    <option value="1">1</option>
+                </select>
+                <input type="text" id="no-hp"/>
+            </div>
+            <div class="password">
+                <label for="password">Password <span>*</span></label>
+                <input type="password" id="password" required>
+                <label for="konfirmasi-password">Konfirmasi-password <span>*</span></label>
+                <input type="password" id="konfirmasi-password" required>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
