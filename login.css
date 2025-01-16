@@ -161,3 +161,10 @@ body {
   height: 20px;
   margin-right: 10px;
 }
+
+.hide {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  cursor: pointer;
+}
