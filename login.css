@@ -38,6 +38,10 @@ body {
     margin-bottom: 20px;
 }
   
+span {
+  color: red;
+}
+
 .login-container{ 
     display: flex;
     flex-direction: column;
