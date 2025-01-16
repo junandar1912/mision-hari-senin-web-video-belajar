@@ -70,19 +70,19 @@ body {
     color: red;
  }
 
- .lupa-password{;
-    text-align: right;
-    align-self: :end;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-    letter-spacing: 0.2px;
-    color: #4a505c;
-    text-decoration: none;
-    margin: 16px ;  
-    display: block;
- }
+ .lupa-password {;
+  text-align: right;
+  align-self: :end;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #4a505c;
+  text-decoration: none;
+  margin: 16px ;  
+  display: block;
+}
 
  .button{
     justify-content: center;
