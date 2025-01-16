@@ -162,10 +162,6 @@ body {
   margin-right: 10px;
 }
 
-span {
-  color: red;
-}
-
 .hide {
   display: flex;
   flex-direction: row;
