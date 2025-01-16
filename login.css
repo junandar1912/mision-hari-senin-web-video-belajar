@@ -53,36 +53,34 @@ body {
 }
 
 .form-label input{
+   margin: 5px;
     width: 518px;
     height: 48px;
     border: 1px solid rgba(241, 241, 241, 1);
     border-radius: 6px;
  }
 
-.container-email .container-password{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+ .container-email .container-password{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
- .form-label span{
-    color: red;
+.lupa-password{
+    text-align: right;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #4a505c;
+    text-decoration: none;
+    margin: 16px ;  
+    display: block;
+    margin-right: 0px;
+    padding-right: 0px;
  }
-
- .lupa-password {;
-  text-align: right;
-  align-self: :end;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 140%;
-  letter-spacing: 0.2px;
-  color: #4a505c;
-  text-decoration: none;
-  margin: 16px ;  
-  display: block;
-}
 
  .button{
     justify-content: center;
@@ -103,6 +101,7 @@ body {
     border: 1px solid rgba(62, 207, 76, 1);
     border-radius: 10px;
     margin-bottom: 16px;
+    cursor: pointer;
  }
 
  .daftar {
@@ -113,6 +112,7 @@ body {
     color: rgba(62, 207, 76, 1);
     border: 1px solid rgba(226, 252, 217, 0.8);
     border-radius: 10px;
+    cursor: pointer;
  }
   
  .divider {
