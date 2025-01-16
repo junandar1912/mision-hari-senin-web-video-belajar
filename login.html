@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="nav">
+    <header class="nav">
         <img src="Type=Type5.png" >
-    </div>
+    </header>
         
     <div class="login-container">
         <main class="main-content">
@@ -24,7 +24,10 @@
                     </div>
                     <div class="container-password">
                         <label for="password">Password <span>*</span></label>
-                        <input type="password" id="password" required>
+                        <div class="hide">
+                            <input type="password" id="password" required>
+                            <img src="mdi_eye-off.svg" alt="hide">
+                        </div>
                     </div>
                 </div>
 

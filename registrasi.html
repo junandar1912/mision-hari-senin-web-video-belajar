@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="registrasi.css"/>
 </head>
 <body>
-    <div class="nav-bar">
+    <header class="nav-bar">
         <img src="Type=Type5.png" alt="nav-bar">
-    </div>
+    </header>
     <main class="main-content">
         <div class="title">
             <h1>Pendaftaran akun</h1>
@@ -18,7 +18,7 @@
         <div class="main">
             <form action="main-form">
                 <div class="form-nama">
-                    <label for="nama">Nama Lengkap <sapan>*</sapan>
+                    <label for="nama">Nama Lengkap<span>*</span>
                         <input type="text" id="nama" required>
                     </label>
                 </div>
@@ -26,19 +26,34 @@
                     <label for="email">E-mail <span>*</span></label>
                     <input type="email" id="email" required> 
                 </div>
-                <div class="form number">
+                <div class="form-number">
                     <label for="no-hp">NO. HP <span>*</span></label>
-                    <select name="phone-number" id="no-hp">
-                        <option value="+62">+62</option>
-                        <option value="1">1</option>
-                    </select>
-                    <input type="text" id="no-hp"/>
+                    </div>
+                    <div class="no-hp">
+                        <div class="option">
+                            <img src="Indonesia (ID).svg" class="flag-id">
+                        <select name="phone-number" id="no-hp" class="select">
+                            <option value="+62" class="flag-id">+62</option>
+                        </select>
+                        <input type="text" id="no-hp" required/>
+                    </div>
                 </div>
-                <div class="password">
-                    <label for="password">Password <span>*</span></label>
-                    <input type="password" id="password" required>
-                    <label for="konfirmasi-password">Konfirmasi-password <span>*</span></label>
-                    <input type="password" id="konfirmasi-password" required>
+                <div class="password-container">
+                    <div class="password">
+                        <label for="password">Password <span>*</span></label>
+                        <div class="hide">
+                            <input type="password" id="myInput" required>
+                            <img src="mdi_eye-off.svg" alt="show password">
+                        </div>
+                    </div>
+                    <div class="password-container">
+                        <label for="konfirmasi-password">Konfirmasi-password <span>*</span></label>
+                        <div class="hide">
+                            <input type="password" id="myInput" required>
+                            <img src="mdi_eye-off.svg" alt="input">
+                        </div>
+                    </div>
+                    
                 </div>
             </form>
         </div>
@@ -54,7 +69,7 @@
 
         <button class="btn-google">
             <img src="logos_google-icon.svg" alt="btn-google" href="#"/>
-            Masuk dengan google 
+            Daftar dengan google 
         </button>
     </main>
 </body>
