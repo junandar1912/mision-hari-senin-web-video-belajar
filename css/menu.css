@@ -7,8 +7,8 @@
 
 body {
     align-items: center;
-    width: 1440px;
     height: 100vh;
+    width: 100vw;
     background-color: #fffdf3;
 }
 
@@ -47,7 +47,7 @@ header {
     border: #FFFFFF;
     position: absolute;
     top: 30px;
-    left: 1176px;
+    left: 85%;
     cursor: pointer;
 }
 
@@ -121,7 +121,7 @@ input {
     align-items: flex-start;
     padding: 0px;
     gap: 32px;
-    width: 1200px;
+    width: 100%;
     height: 1525px;
     margin-top: 64px;
 }
@@ -190,7 +190,7 @@ h4 {
     flex-direction: column;
     text-align: left;
     gap: 16px;
-    width: 384px;
+    width: 100%;
     height: 426px;
     padding: 20px;
     border: 1px solid rgba(58, 53, 65, 0.12);
@@ -331,7 +331,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1200px;
+    width: 100%;
     margin-bottom: 40px;
     height: 199px;
 }
@@ -405,3 +405,454 @@ footer {
     height: 185px;
     gap: 15px;
 }    
+
+@media screen and (max-width: 360) {
+    header {
+    width: 100%;
+    height: 74px;
+    }
+}
+
+/* contekan */\
+
+@media screen and (max-width: 455px) {
+    
+    main{
+        padding: 64px 20px;
+    }
+    
+    /* Navbar Start */
+    header .navbar-container {
+        height: 74px;
+        padding: 12px 20px;
+    }
+
+    header .navbar-container .nav-img img{
+        max-width: 152px;
+        width: 100%;
+
+    
+        object-fit: cover;
+    }
+    header .navbar-container .menu {
+        margin: auto;
+        
+        display: inline-block;
+    }
+    header .profile-img{
+        display: none;
+        position: absolute;
+        
+        top: 1%;
+        right: -1000px;
+    }
+    header .navbar-container p{
+        display: none;
+        position: absolute;
+        
+        top: 10%;
+        right: -1000px;
+    }
+    /* Navbar End */
+
+    /* Hero Section Start */
+    main #hero-sec {
+        padding: 64px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    main #hero-sec .text-hero {
+        gap: 12px;
+    }
+    main #hero-sec .container-hero{
+        padding: 3px 10px;
+    }
+    main #hero-sec .text-hero h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26.4px;
+        text-align: center;
+        padding: 0px;
+    }
+    main #hero-sec .text-hero p {
+        font-family: DM Sans, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19.6px;
+        letter-spacing: 0.2px;
+    }
+    main #hero-sec button {
+        max-width: 369px;
+        width: 90%;
+        height: 45px;
+        border-radius: 10px;
+    
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19.6px;
+        letter-spacing: 0.2px;
+        margin: auto;
+    }
+    /* Hero Section End */
+
+    /* Card Start */
+    main #card-container {
+        max-width: 1200px;
+        width: 100%;
+        
+        gap: 25px;
+    }
+    main #card-container .head-card{
+        max-width: 623px;
+        max-height: 67px;
+        width: 100%;
+        height: 100%;
+        
+        gap: 10px;
+    }
+    main #card-container .head-card h3 {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+    main #card-container .head-card p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+    main #card-container .nav-card{
+        max-height: 170px;
+        gap: 1px;
+    }
+    main #card-container .nav-card ul li a {
+        font-size: 14.4px;
+    }
+    main #card-container .nav-card .line{
+        width: 15%;
+        max-height: 3px;
+    }
+    
+    main #card-container .card-list{
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+        flex: 1;
+    }
+
+    main #card-container .card-list .card{
+        margin: auto;
+        max-width: 320px;
+        width: 100%;
+        max-height: 147px;
+        height: 100%;
+        
+        flex: 1;
+        gap: 8px;
+        padding: 16px;
+    }
+    main #card-container .card-list .card .cardlist-cont {
+        max-width: 288px;
+        width: 100%;
+        max-height: 83px;
+        height: 100%;
+        display: flex;
+        gap: 12px;
+        
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main #card-container .card-list .card .cardlist-cont img{
+        padding: 0;
+        max-width: 82px;
+        width: 82px;
+        max-height: 82px;
+        height: 82px;
+    }
+    main #card-container .card-list .card .cardlist-cont .content-cont {
+    width: 194px;
+    height: 82px;
+    gap: 8px;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    main #card-container .card-list .card .card-text {
+        margin: auto;
+        gap: 8px;
+    }
+    
+    main #card-container .card-list .card .card-text .title-content {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.2px;
+    }
+    
+    main #card-container .card-list .card .card-text .text-content {
+        max-width: 344px;
+        width: 100%;
+        height: 44px;
+        display: none;
+    
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20.2px;
+        letter-spacing: 0.2px;
+    }
+
+    main #card-container .card-list .card .card-user {
+        max-width: 194px;
+        width: 100%;
+        max-height: 37px;
+    
+        gap: 8px;
+    }
+    main #card-container .card-list .card .card-user img {
+        width: 36px;
+        height: 36px;
+    }
+    main #card-container .card-list .card .card-user .user-name .name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19.6px;
+        letter-spacing: 0.2px;
+    }
+    
+    
+    main #card-container .card-list .card .card-user .user-name .job .job-pos {
+        font-weight: 400;
+        font-size: 12px;
+    }
+    
+    main #card-container .card-list .card .card-user .user-name .job .place {
+        display: none;
+    }
+    main #card-container .card-list .card .card-user .user-name .job .text-di{
+        display: none;
+    }
+    main #card-container .card-list .card .card-rate .rate .star {
+        max-height: 18px;
+        width: 90px;
+        height: 18px;
+    }
+    main #card-container .card-list .card .card-rate .rate{
+        gap: 8px;
+    }
+    main #card-container .card-list .card .card-rate .rate p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16.8px;
+        letter-spacing: 0.2px;
+    }
+    
+    main #card-container .card-list .card .card-rate .price {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    /* Card List End */
+
+    /* Banner CTA Start */
+    main .banner-cta .banner-container{
+        gap: 20px;
+        padding: 20px;
+
+        max-height: 304px;
+        height: 100%;
+    }
+    main .banner-cta .banner-container .banner-text .top{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22.4px;
+        letter-spacing: 0.2px;
+    }
+    
+    main .banner-cta .banner-container .banner-text .center{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26.4px;
+    }
+    
+    main .banner-cta .banner-container .banner-text .bottom{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19.6px;
+        letter-spacing: 0.2px;
+    }
+
+    main .banner-cta .banner-container .btn-container {
+        max-width: 280px;
+        width: 100%;
+        max-height: 96px;
+        height: 100%;
+        border-radius: 10px;
+        margin: auto;
+        gap: 10px;
+        padding: 10px 8px 10px 12px;
+        background-color: transparent;
+        
+        flex-direction: column;
+    }
+    
+    main .banner-cta .banner-container .btn-container input[type=email] {
+        max-width: 280px;
+        width: 100%;
+        max-height: 40px;
+        height: 100%;
+        border-radius: 10px;
+        
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19.6px;
+        letter-spacing: 0.2px;
+        text-align: center;
+    }
+    
+    main .banner-cta .banner-container .btn-container button {
+        max-width: 280px;
+        width: 100%;
+        max-height: 40px;
+        height: 100%;
+        border-radius: 10px;
+    
+        padding: 1px 2px;
+    
+        font-family: DM Sans, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19.6px;
+        letter-spacing: 0.2px;
+    
+    }
+    /* Banner CTA End */
+
+    /* Footer Start */
+
+    footer .footer-cont {
+        padding: 2px 20px 50px;
+        
+        gap: 16px;
+    }
+
+    footer .footer-cont .footer-line {
+            padding-top: 85px;
+        }
+    footer .footer-cont .footlist-container {
+            flex-direction: column;
+            max-width: 360px;
+            gap: 6px;
+        }
+    footer .footer-cont .footlist-container .left .footer-logo {
+            width: 100%;
+            object-fit: cover;
+        }
+    footer .footer-cont .footlist-container .left .footer-logo img {
+            top: 8px;
+            left: 3px;
+        }
+        
+    footer .footer-cont .footlist-container .left .keterangan {
+            gap: 8px;
+        }
+        
+    footer .footer-cont .footlist-container .left .keterangan .slogan {
+            max-width: 320px;
+            width: 100%;
+            height: 40px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19.6px;
+            letter-spacing: 0.2x;
+        }
+        
+    footer .footer-cont .footlist-container .left .keterangan .alamat {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 13px;
+            letter-spacing: 0.2px;
+        }
+    footer .footer-cont .footlist-container .left .keterangan .nomor {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19.6px;
+            letter-spacing: 0.2px;
+        }
+        
+    footer .footer-cont .footlist-container .right {
+            max-height: 199px;
+            height: 199px;
+
+            flex-direction: column;
+        }
+        
+    footer .footer-cont .footlist-container .right .category{
+            gap: 12px;
+        }
+        
+    footer .footer-cont .footlist-container .right .category .category-text{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .footer-cont .footlist-container .right .category p{
+            font-size: 16px;
+            line-height: 22.4px;
+        }
+
+    footer .footer-cont .footlist-container .right .category .category-text .chevron{
+        color: #3A35418A;
+        display: inline;
+    }
+
+    footer .footer-cont .footlist-container .right .category ul{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            
+            display: none;
+            gap: 15px;
+        }
+        
+    footer .footer-cont .footlist-container .right .category ul li {
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 0.2px;
+        }
+
+    footer .footer-cont .footer-socmed {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    footer .footer-cont .footer-socmed p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.2px;
+            order: 2;
+            color: #333333;
+        }
+        
+    footer .footer-cont .footer-socmed ul {
+            max-width: 185px;
+            width: 40%;
+            max-height: 35px;
+        
+            gap: 13px;
+            order: 1;
+        }
+        
+    footer .footer-cont .footer-socmed ul li {
+            max-width: 35px;
+            height: 35px;
+            list-style-type: none;
+        }
+
+    /* Footer End  */
+
+
+

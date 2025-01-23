@@ -8,7 +8,8 @@
 </head>
 <body>
     <header class="nav-bar">
-        <img src="gambar/Type=Type5.png" alt="nav-bar">
+        <img src="gambar/Type=Type5.png" alt="nav-bar" style="width: 237px; height: 58px;">
+        <input type="button" value="button" class="nav-button">
     </header>
     <main class="main-content">
         <div class="title">
@@ -19,7 +20,7 @@
             <form action="main-form">
                 <div class="form-nama">
                     <label for="nama">Nama Lengkap<span>*</span>
-                        <input type="text" id="nama" required>
+                      <input type="text" id="nama" required>
                     </label>
                 </div>
                 <div class="form-email">
@@ -28,15 +29,15 @@
                 </div>
                 <div class="form-number">
                     <label for="no-hp">NO. HP <span>*</span></label>
-                    </div>
-                    <div class="no-hp">
-                        <div class="option">
-                            <img src="gambar/Indonesia (ID).svg" class="flag-id">
+                </div>
+                <div class="no-hp">
+                    <div class="flag">
+                        <img src="gambar/Indonesia (ID).svg" class="flag-id">
                         <select name="phone-number" id="no-hp" class="select">
                             <option value="+62" class="flag-id">+62</option>
                         </select>
-                        <input type="text" id="no-hp" required/>
                     </div>
+                    <input type="text" id="no-hp" required/>
                 </div>
                 <div class="password-container">
                     <div class="password">
@@ -47,30 +48,30 @@
                         </div>
                     </div>
                     <div class="password-container">
-                        <label for="konfirmasi-password">Konfirmasi-password <span>*</span></label>
-                        <div class="hide">
-                            <input type="password" id="myInput" required>
-                            <img src="gambar/mdi_eye-off.svg" alt="input">
-                        </div>
+                            <label for="konfirmasi-password">Konfirmasi-password <span>*</span></label>
+                            <div class="hide">
+                                <input type="password" id="myInput" required>
+                                <img src="gambar/mdi_eye-off.svg" alt="input">
+                            </div>
                     </div>
-                    
-                </div>
-            </form>
-        </div>
-
-        <a href="#" class="lupa-password">Lupa-password?</a>
-
-        <div class="button">
-                <input type="submit" href="#" value="Daftar" class="daftar">
-                <input type="button" href="#" value="Masuk" class="masuk">
-        </div>
-
-        <div class="divider">atau</div>
-
-        <button class="btn-google">
-            <img src="gambar/logos_google-icon.svg" alt="btn-google" href="#"/>
-            Daftar dengan google 
-        </button>
-    </main>
+                        
+                    </div>
+                </form>
+            </div>
+    
+            <a href="#" class="lupa-password">Lupa-password?</a>
+    
+            <div class="button">
+                    <input type="submit" href="#" value="Daftar" class="daftar">
+                    <input type="button" href="#" value="Masuk" class="masuk">
+            </div>
+    
+            <div class="divider">atau</div>
+    
+            <button class="btn-google">
+                <img src="gambar/logos_google-icon.svg" alt="btn-google" href="#" class="logo-btn"/>
+                <p>Masuk dengan google</p> 
+            </button>
+        </main>
 </body>
 </html>
