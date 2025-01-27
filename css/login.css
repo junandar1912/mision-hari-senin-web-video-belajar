@@ -159,6 +159,7 @@ span {
   background: #FFFFFF;
   border: 1px solid #F1F1F1;
   border-radius: 10px;
+  color: #4a505c;
   cursor: pointer;
 }
 
@@ -170,7 +171,6 @@ span {
   font-weight: 700;
   line-height: 140%;
   letter-spacing: 0.2px;
-  color: #4a505c;
   text-decoration: none;
 }
 
@@ -205,3 +205,23 @@ span {
     gap: 20px;
   }
 }
+
+@media screen  and (max-width: 500px) {
+  .nav {
+    width: 100%;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    padding: 16px 24px;
+    box-shadow: 4px 8px 12px rgba(62, 67, 74, 0.15), 0px 0px 1px rgba(62, 67, 74, 0.31);
+  }
+
+  .login-container {
+    flex: none;
+    width: 320px;
+    padding: 20px;
+    gap: 20px;
+  }
+}
+

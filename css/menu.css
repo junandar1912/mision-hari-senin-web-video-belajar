@@ -33,7 +33,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    gap: 36px;
+    gap: px;
     width: 100%;
     height: 56px;
 }
@@ -48,7 +48,7 @@ header {
 .nav-button {
     position: relative;
     top: -10px;
-    left: 1100px;
+    left: 900px;
     width: 64px;
     height: 22px;
     background-color: #FFFFFF;
@@ -82,8 +82,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 80px 140px;
-    padding-bottom: 60px;
+    padding: 40px 140px ;
     font-family: "poppins";
     text-align: center;
     color: #ffffff;
@@ -99,7 +98,6 @@ main {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
     flex: none;
     order: 0;
     align-self: stretch;
@@ -108,8 +106,7 @@ main {
 
 .p-tittle {
     font-family: "DM sans";
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 400;
 }
 
 
@@ -381,6 +378,8 @@ footer {
 .media {
     display: flex;
     flex-direction: row;
+    list-style-type: none;
+    border: 1px solid transparent;
     height: 35px;
     gap: 15px;
 }
@@ -390,9 +389,6 @@ footer {
 
 @media screen and (max-width: 500px) {
     /* nav-bar*/
-    body {
-        box-sizing: border-box;
-    }
 
     header {
         width: 100%;
@@ -414,89 +410,56 @@ footer {
         visibility: visible;
     }
 
-    /*main*/
+    /* banner head*/
 
     main {
         width: 100%;
-        padding: 28px 20px;
-        display: flex;
-     } 
+        padding: 40px 10px;
+        gap: 20px;
+    }
 
     .head {
+        display: grid;
         width: 100%;
-        height: 400px;
-        padding: 64px 20px;
+        font-size: 0.70rem;
     }
 
-    h1 {
-        font-weight: 700;
-        font-size: 24px;
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .p-tittle {
-        font-weight: 500;
-        font-size: 14px;
+    .draf {
+        display: grid;
     }
 
-    input {
-        width: 100%;
-        height: 40px;
+    .isi {
+        padding: 5px;
+        display: flex;
+        gap: 0.30rem;
+        height: 175px;
+      }
+
+    .paragraf {
+        display: none;
     }
 
-    /*DAFTAR VIDEO*/
-
-    .daftar-video {
-        width: 100%;
-        gap: 24px;
+    .img-rating {
+        width: 143px;
+        height: 20px;
     }
 
-    .tittle-isi {
-        line-height: 0,2px;
-        font-weight: 500;
-        font-size: 14px;
+    .imh-card {
+        width: 50px;
+        height: 80px;
+        justify-self: flex-start;
     }
-
-    h4 {
-        font-weight: 700;
-        font-size: 25px;
-    }
-
-            /* card */
-            /* card */
-            .card {
-                width: 100%;
-                margin-bottom: 20px;
-                padding: 15px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                border-radius: 8px;
-                background-color: #fff;
-            }
-        
-            .card img {
-                width: 100%;
-                height: auto;
-                border-radius: 8px 8px 0 0;
-            }
-        
-            .card-content {
-                padding: 10px;
-            }
-        
-            .card-title {
-                font-size: 18px;
-                margin-bottom: 10px;
-            }
-        
-            .card-description {
-                font-size: 14px;
-                color: #666;
-            }
-        
-        /* ...existing code... */
 
     /* banner cta */
 
     .tittle-bawah {
+        display: flex;
         width: 100%;
         height: 400px;
         font-weight: 500;
